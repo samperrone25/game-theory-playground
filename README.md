@@ -1,7 +1,7 @@
 Visit: {} to see it working
 
 Screenshot:
-![image](https://github.com/user-attachments/assets/d9d38abb-fa69-4d80-b211-c6e4e5dfa2e8)
+![image](https://github.com/user-attachments/assets/c5a1795b-9b86-4dc2-b774-c61faa0354fe)
 
 -----------------------
 
