@@ -1,3 +1,4 @@
+A react/next.js app that provides exercises testing basic game theory concepts.
 Visit: {} to see it working
 
 Screenshot:
