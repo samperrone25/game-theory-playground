@@ -35,34 +35,34 @@ export default function BestResponseGame() {
   };
 
   return (
-      <div className="w-full grid grid-cols-2 gap-4">
-        <div className="p-4 flex flex-col gap-2">
-          <div>
-            A Best Response (BR) is the choice that results in a maximal payoff
-            given all the choices of the other players.
-          </div>
-          <div>
-            Select the Best Response from choices A, B or C given Player
-            2&apos;s indicated choice.
-          </div>
-          <div>
-            Randomise the game board and Player 2&apos;s choice and try again.
-          </div>
-          <div className="flex justify-center">
-            <button
-              onClick={randomizeGame}
-              className="mt-4 bg-slate-400 hover:bg-slate-500 text-white font-bold py-2 px-4 rounded"
-            >
-              Randomize Game
-            </button>
-          </div>
+    <div className="w-full grid grid-cols-2 gap-4">
+      <div className="p-4 flex flex-col gap-2">
+        <div>
+          A Best Response (BR) is the choice that results in a maximal payoff
+          given all the choices of the other players.
+        </div>
+        <div>
+          Select the Best Response from choices A, B or C given Player 2&apos;s
+          indicated choice.
+        </div>
+        <div>
+          Randomise the game board and Player 2&apos;s choice and try again.
         </div>
         <div className="flex justify-center">
-          <BestResponseBimatrixDisplay
-            bimatrix={brBimatrix}
-            player2Choice={player2Choice}
-          ></BestResponseBimatrixDisplay>
+          <button
+            onClick={randomizeGame}
+            className="mt-4 bg-slate-400 hover:bg-slate-500 text-white font-bold py-2 px-4 rounded"
+          >
+            Randomize Game
+          </button>
         </div>
       </div>
+      <div className="flex justify-center">
+        <BestResponseBimatrixDisplay
+          bimatrix={brBimatrix}
+          player2Choice={player2Choice}
+        ></BestResponseBimatrixDisplay>
+      </div>
+    </div>
   );
 }
