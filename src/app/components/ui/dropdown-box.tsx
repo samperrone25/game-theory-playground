@@ -20,9 +20,8 @@ return (
     <div className="w-full">
       <div
         className="bg-white border border-gray-300 rounded-lg shadow-sm"
-        onClick={toggleDropdown}
       >
-        <div className="flex items-center justify-between p-4 cursor-pointer">
+        <div className="flex items-center justify-between p-4 cursor-pointer" onClick={toggleDropdown}>
           <h3 className="text-lg font-semibold text-gray-700">{subtitle}</h3>
           <div className={`transform transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>
             <ChevronDownIcon className="w-5 h-5 text-gray-500" />

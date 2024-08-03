@@ -21,7 +21,7 @@ export default function Home() {
         </a>
       </div>
       <div className="w-full flex flex-col items-center">
-        <div className="max-w-screen-xl flex flex-col justify-between items-center gap-4">
+        <div className="w-full max-w-screen-xl flex flex-col justify-between items-center gap-4">
           <div className="p-6 text-4xl font-bold">Game Theory Playground</div>
           <DropdownBox subtitle="1) Best Responses" openOnInit={true}><BestResponseGame></BestResponseGame></DropdownBox>
           <DropdownBox subtitle="2) Dominant Strategies"><DominantStrategyGame></DominantStrategyGame></DropdownBox>
