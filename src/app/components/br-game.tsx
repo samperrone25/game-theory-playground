@@ -35,9 +35,7 @@ export default function BestResponseGame() {
   };
 
   return (
-    <div className="w-full border-2 border-black rounded p-4">
-      <div>1. Best Response</div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="w-full grid grid-cols-2 gap-4">
         <div className="p-4 flex flex-col gap-2">
           <div>
             A Best Response (BR) is the choice that results in a maximal payoff
@@ -66,6 +64,5 @@ export default function BestResponseGame() {
           ></BestResponseBimatrixDisplay>
         </div>
       </div>
-    </div>
   );
 }

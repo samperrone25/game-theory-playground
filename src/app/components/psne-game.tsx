@@ -28,8 +28,7 @@ export default function PureStrategyNashEquilibriaGame() {
   };
 
   return (
-    <div className="w-full border-2 border-black rounded p-4">
-      <div>3. Pure Strategy Nash Equilibria</div>
+    <div className="w-full">
       <div className="p-4 flex flex-col gap-2">
         <div>
           A Pure Strategy (PS) is a plan that outlines moves a player will make

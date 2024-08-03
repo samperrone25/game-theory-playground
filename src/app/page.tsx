@@ -1,6 +1,7 @@
 import DominantStrategyGame from "./components/ds-game";
 import PureStrategyNashEquilibriaGame from "./components/psne-game";
 import BestResponseGame from "./components/br-game";
+import DropdownBox from "./components/ui/dropdown-box";
 
 export default function Home() {
   return (
@@ -22,9 +23,9 @@ export default function Home() {
       <div className="w-full flex flex-col items-center">
         <div className="max-w-screen-xl flex flex-col justify-between items-center gap-4">
           <div className="p-6 text-4xl font-bold">Game Theory Playground</div>
-          <BestResponseGame></BestResponseGame>
-          <DominantStrategyGame></DominantStrategyGame>
-          <PureStrategyNashEquilibriaGame></PureStrategyNashEquilibriaGame>
+          <DropdownBox subtitle="1) Best Responses" openOnInit={true}><BestResponseGame></BestResponseGame></DropdownBox>
+          <DropdownBox subtitle="2) Dominant Strategies"><DominantStrategyGame></DominantStrategyGame></DropdownBox>
+          <DropdownBox subtitle="3) Pure Strategy Nash Equilibria"><PureStrategyNashEquilibriaGame></PureStrategyNashEquilibriaGame></DropdownBox>
           <div className="p-6"></div>
         </div>
       </div>
